@@ -1,18 +1,16 @@
 import CalcButton from "./CalcButton";
 
 const CalcDisplay = (props) => {
-  const inputHandler = (event) => {
+  const directInputHandler = (event) => {
     // console.log(event.target.value.length);
-    props.displayHandler(
-      event.target.value.slice(event.target.value.length, 1)
-    );
+    props.directInputToFiledHandler(event.target.value);
   };
   return (
     <div className="d-flex flex-row justify-content-center  ">
       <div className="col-8 col-xl-4">
         <input
           value={props.display}
-          onChange={inputHandler}
+          onChange={directInputHandler}
           type="text"
           className="form-control "
           placeholder="0"

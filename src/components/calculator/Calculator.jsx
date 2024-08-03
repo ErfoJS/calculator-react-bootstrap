@@ -9,6 +9,9 @@ const Calculator = () => {
     setDisplay((prevDisplayInput) => `${prevDisplayInput}${displayInput}`);
     console.log(displayInput);
   };
+  const directInputToFiledHandler = (inputFromField) => {
+    setDisplay(inputFromField);
+  };
   const resetDisplay = () => {
     setDisplay("");
   };
@@ -21,6 +24,7 @@ const Calculator = () => {
   return (
     <div className="d-flex flex-column gap-2 ">
       <CalcDisplay
+        directInputToFiledHandler={directInputToFiledHandler}
         display={display}
         displayHandler={displayHandler}></CalcDisplay>
       <CalcKeyboard
