@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 const CalcButton = (props) => {
-  const [inputData, setInputData] = useState("");
+  const [inputData, setInputData] = useState(props.value);
   const displayInButtonHandler = () => {
     setInputData(props.value);
     props.displayHandler(inputData);
+    console.log(inputData);
+    console.log("displayInButtonHandler fire");
   };
   return (
     <Button

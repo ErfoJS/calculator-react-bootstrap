@@ -6,10 +6,15 @@ const Calculator = () => {
   const [display, setDisplay] = useState("");
 
   const displayHandler = (displayInput) => {
-    setDisplay((prevDisplayInput) => [...prevDisplayInput, displayInput]);
+    setDisplay((prevDisplayInput) => `${prevDisplayInput}${displayInput}`);
+    console.log(displayInput);
   };
   const resetDisplay = () => {
     setDisplay("");
+  };
+
+  const deleteLastHandler = () => {
+    setDisplay(display.slice(0, display.length - 1));
   };
 
   console.log(display);
@@ -19,6 +24,7 @@ const Calculator = () => {
         display={display}
         displayHandler={displayHandler}></CalcDisplay>
       <CalcKeyboard
+        deleteLastHandler={deleteLastHandler}
         displayHandler={displayHandler}
         resetDisplay={resetDisplay}></CalcKeyboard>
     </div>

@@ -1,14 +1,15 @@
 import CalcButton from "./CalcButton";
 import CalcAcButton from "./CalcAcButton";
+import CalcDeleteLast from "./CalcDeleteLast";
 
 const CalcKeyboard = (props) => {
   return (
     <div className="d-flex gap-1 flex-column ">
       <div className="d-flex gap-1 flex-row justify-content-center">
         <div className="col-2 col-xl-1">
-          <CalcButton
-            displayHandler={props.displayHandler}
-            value="<-"></CalcButton>
+          <CalcDeleteLast
+            deleteLastHandler={props.deleteLastHandler}
+            value="<-"></CalcDeleteLast>
         </div>
         <div className="col-2 col-xl-1">
           <CalcAcButton

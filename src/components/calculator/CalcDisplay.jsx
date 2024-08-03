@@ -2,7 +2,10 @@ import CalcButton from "./CalcButton";
 
 const CalcDisplay = (props) => {
   const inputHandler = (event) => {
-    props.displayHandler(event.target.value);
+    // console.log(event.target.value.length);
+    props.displayHandler(
+      event.target.value.slice(event.target.value.length, 1)
+    );
   };
   return (
     <div className="d-flex flex-row justify-content-center  ">
