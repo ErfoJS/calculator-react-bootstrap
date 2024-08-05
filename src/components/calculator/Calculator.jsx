@@ -23,7 +23,7 @@ const Calculator = () => {
 
   const equalButtonHandler = () => {
     setSecondaryDisplay(display);
-    setDisplay("ok");
+    setDisplay("");
   };
 
   return (
