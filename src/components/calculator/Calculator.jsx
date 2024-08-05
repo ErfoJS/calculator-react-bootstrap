@@ -20,9 +20,10 @@ const Calculator = () => {
     setDisplay(display.slice(0, display.length - 1));
   };
 
-  console.log(display);
+  const eqalButtonHandler = () => {};
+
   return (
-    <div className="d-flex flex-column gap-2 ">
+    <div className="d-flex flex-column gap-1 ">
       <CalcDisplay
         directInputToFiledHandler={directInputToFiledHandler}
         display={display}

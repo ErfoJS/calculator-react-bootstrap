@@ -1,6 +1,7 @@
 import CalcButton from "./CalcButton";
 import CalcAcButton from "./CalcAcButton";
 import CalcDeleteLast from "./CalcDeleteLast";
+import CalcEqualButton from "./CalcEqualButton";
 
 const CalcKeyboard = (props) => {
   return (
@@ -107,9 +108,9 @@ const CalcKeyboard = (props) => {
             value=","></CalcButton>
         </div>
         <div className=" col-2 col-xl-1">
-          <CalcButton
+          <CalcEqualButton
             displayHandler={props.displayHandler}
-            value="="></CalcButton>
+            value="="></CalcEqualButton>
         </div>
       </div>
     </div>

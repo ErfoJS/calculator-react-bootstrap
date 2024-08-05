@@ -12,7 +12,7 @@ const CalcButton = (props) => {
     <Button
       onClick={displayInButtonHandler}
       className="w-100"
-      variant={props.value - props.value === 0 ? "dark" : "warning"}>
+      variant={props.value - props.value === 0 ? "secondary" : "warning"}>
       {props.value}
     </Button>
   );
