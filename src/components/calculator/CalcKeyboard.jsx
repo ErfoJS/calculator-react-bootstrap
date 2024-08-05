@@ -109,7 +109,7 @@ const CalcKeyboard = (props) => {
         </div>
         <div className=" col-2 col-xl-1">
           <CalcEqualButton
-            displayHandler={props.displayHandler}
+            equalButtonHandler={props.equalButtonHandler}
             value="="></CalcEqualButton>
         </div>
       </div>

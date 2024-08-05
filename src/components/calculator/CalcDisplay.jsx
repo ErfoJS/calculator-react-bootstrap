@@ -19,7 +19,7 @@ const CalcDisplay = (props) => {
               </CalcButton>
             </div>
             <div className="col-10 text-end">
-              <span className="text-end">22</span>
+              <span className="text-end">{props.secondaryDisplay}</span>
             </div>
           </div>
           <div className="w-100">
