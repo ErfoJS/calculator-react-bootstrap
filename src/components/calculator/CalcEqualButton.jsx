@@ -2,8 +2,8 @@ import Button from "react-bootstrap/Button";
 
 const CalcEqualButton = (props) => {
   const inputToSecondaryDisplay = () => {
-    props.displayHandler("=");
-    props.equalButtonHandler();
+    // props.displayHandler(props.value);
+    props.displayHandler(props.value);
   };
   return (
     <Button

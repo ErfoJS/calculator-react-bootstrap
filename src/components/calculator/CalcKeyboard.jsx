@@ -47,7 +47,7 @@ const CalcKeyboard = (props) => {
         <div className="col-2 col-xl-1">
           <CalcButton
             displayHandler={props.displayHandler}
-            value="x"></CalcButton>
+            value="*"></CalcButton>
         </div>
       </div>
 
@@ -109,7 +109,6 @@ const CalcKeyboard = (props) => {
         </div>
         <div className=" col-2 col-xl-1">
           <CalcEqualButton
-            equalButtonHandler={props.equalButtonHandler}
             displayHandler={props.displayHandler}
             value="="></CalcEqualButton>
         </div>
